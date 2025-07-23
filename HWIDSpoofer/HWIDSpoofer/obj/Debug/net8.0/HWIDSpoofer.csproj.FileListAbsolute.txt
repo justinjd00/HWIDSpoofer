@@ -1,0 +1,14 @@
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.csproj.CoreCompileInputs.cache
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.sourcelink.json
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.exe
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.dll.config
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.deps.json
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.runtimeconfig.json
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.dll
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\bin\Debug\net8.0\HWIDSpoofer.pdb
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.dll
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\refint\HWIDSpoofer.dll
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.pdb
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\HWIDSpoofer.genruntimeconfig.cache
+C:\Spoofer\x\SimpleHWIDSpoofer\HWIDSpoofer\HWIDSpoofer\obj\Debug\net8.0\ref\HWIDSpoofer.dll

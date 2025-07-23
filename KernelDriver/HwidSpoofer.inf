@@ -1,0 +1,72 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=HwidSpoofer.cat
+DriverVer=07/23/2025,1.0.0.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+HwidSpoofer_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+HwidSpoofer.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%HwidSpoofer.DeviceDesc%=HwidSpoofer_Device, Root\HwidSpoofer
+
+[HwidSpoofer_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+HwidSpoofer.sys
+
+;-------------- Service installation
+[HwidSpoofer_Device.NT.Services]
+AddService = HwidSpoofer,%SPSVCINST_ASSOCSERVICE%, HwidSpoofer_Service_Inst
+
+; -------------- HwidSpoofer driver install sections
+[HwidSpoofer_Service_Inst]
+DisplayName    = %HwidSpoofer.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\HwidSpoofer.sys
+
+;
+;--- HwidSpoofer_Device Coinstaller installation ------
+;
+
+[HwidSpoofer_Device.NT.CoInstallers]
+AddReg=HwidSpoofer_Device_CoInstaller_AddReg
+CopyFiles=HwidSpoofer_Device_CoInstaller_CopyFiles
+
+[HwidSpoofer_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[HwidSpoofer_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[HwidSpoofer_Device.NT.Wdf]
+KmdfService =  HwidSpoofer, HwidSpoofer_wdfsect
+[HwidSpoofer_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Hardware ID Spoofer Corp"
+DiskName = "HwidSpoofer Installation Disk"
+HwidSpoofer.DeviceDesc = "Hardware ID Spoofer Device"
+HwidSpoofer.SVCDESC = "Hardware ID Spoofer Service"
